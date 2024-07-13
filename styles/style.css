@@ -1,0 +1,152 @@
+/* Fonts */
+.open-sans{
+    font-family: "Open Sans", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Banner Content */
+
+.header-container{
+    max-width: 1600px;
+    margin: 0 auto;
+    background-image: url('../images/developer.png'), url('../images/header_bg.png');
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-size: auto;
+}
+nav h1{
+    font-family: Open Sans;
+    font-size: 45px;
+    font-weight: 800;
+   
+}
+
+span{
+    font-family: Open Sans;
+    color:  rgb(253, 110, 10);
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+ul{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+nav li{
+    list-style: none;
+   
+    
+}
+
+nav li a{
+    color: rgb(71, 71, 71);
+    font: Open Sans;
+    font-weight: 400px;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+.banner-parent-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.btn-primary{
+    border-radius: 5px;
+    background: rgb(253, 110, 10);
+    color: rgb(255, 255, 255);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 18px 36px;
+    border: none;
+}
+.text-container {
+    margin-left: 235px;
+}
+
+.text-container h2{
+    color: rgb(71, 71, 71);
+    font-family: Open Sans;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.text-container h1{
+    color: rgb(24, 24, 24);
+    font-family: Open Sans;
+    font-size: 85px;
+    font-weight: 700;
+    margin-bottom:20px;
+}
+
+.text-container p{
+    color: rgb(117, 117, 117);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.btn-secondary{
+    color: rgb(253, 110, 10);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 700;
+    width: 160px;
+    height: 64px;
+    border:1px solid rgb(253, 110, 10);
+    border-radius: 5px;
+    margin-left: 30px;
+
+}
+
+@media screen and (max-width:576px) {
+    nav, ul, .banner-parent-container{
+        flex-direction: column;
+    }
+
+    .header-container{
+        background-image: none;
+    }
+
+    .text-container{
+        margin-left: 10px;
+    }
+
+    .text-container h2{
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    .text-container h1{
+        font-size: 50px;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+    .image-container img{
+        width: 100%;
+    }
+
+    ul{
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+    }
+}
+
+
